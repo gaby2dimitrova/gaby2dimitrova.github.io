@@ -1,0 +1,180 @@
+body{
+  background: olivedrab;
+  font: 20px Calibri;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+#Gallery{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+img{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.slick-arrow{
+  width: 100px;
+  height: 100%;
+  z-index: 3;
+}
+
+.slick-arrow:before{
+    color: white;
+    font-size: 2rem;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 45px;
+  z-index: 2;
+  display: flex;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  background-color: olivedrab;
+}
+
+nav div{
+  height: 45px;
+  padding: 7px;
+  opacity: 0.3;
+  transition: 0.2s linear;
+}
+
+nav div:hover{
+  opacity: 1;
+}
+
+nav div.active{
+  opacity: 1;
+}
+
+nav a{
+  text-decoration: none;
+  color: white !important;
+}
+
+
+section{
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+  color: #002200;
+  margin: auto;
+  background-color: white;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+h1{
+  font-size: 2rem;
+  border-bottom: 2px solid white;
+  margin: 0px;
+  color: olive;
+}
+
+p{
+  border-bottom: 2px dashed olive;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 0px;
+}
+body{
+  background: olivedrab;
+  font: 20px Calibri;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+#Gallery{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+img{
+  height: 100%;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.slick-arrow{
+  width: 100px;
+  height: 100%;
+  z-index: 3;
+}
+
+.slick-arrow:before{
+color: olivedrab;
+font-size: 2rem;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 45px;
+  z-index: 2;
+  display: flex;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  background-color: olivedrab;
+}
+
+nav div{
+  height: 45px;
+  padding: 7px;
+  opacity: 0.3;
+  transition: 0.2s linear;
+}
+
+nav div:hover{
+  opacity: 1;
+}
+
+nav div.active{
+  opacity: 1;
+}
+
+nav a{
+  text-decoration: none;
+  color: white !important;
+}
+
+
+section{
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+  color: #002200;
+  margin: auto;
+  background-color: white;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+h1{
+  font-size: 2rem;
+  border-bottom: 2px solid white;
+  margin: 0px;
+  color: olive;
+  text-align: center;
+}
+
+p{
+  border-bottom: 2px dashed olive;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 0px;
+}
