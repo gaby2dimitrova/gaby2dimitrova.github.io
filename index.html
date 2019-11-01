@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
@@ -111,7 +112,6 @@
                  style="width:100%;" />
           </div>
 
-
           <div class="item">
             <img
               src="pictures/cvete_3.jpg"
@@ -131,6 +131,41 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+      <!--Smart and simple trick-->
+      <div>
+          <input type='file'/>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+          <br><img id="myImg" hidden src="#" alt="your image" height=200 width=100>
+        </div>
     </div>
+    <script>
+        let i = 0
+        window.addEventListener('load', function() {
+            document.querySelector('input[type="file"]').addEventListener('change', function() {
+            if (this.files && this.files[0]) {
+                var img = document.querySelectorAll('img')[i];  // $('img')[0]
+                i++;
+                img.src = URL.createObjectURL(this.files[0]); // set src to file url
+                // img.onload = imageIsLoaded; // optional onload event listener
+            }   
+          });
+        });
+    </script>
   </body>
 </html>
